@@ -17,7 +17,7 @@ namespace Atividade07
 
         public void SaveUser(User user)
         {
-            if (string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Email))
+            if (string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Email) || user == null)
             {
                 throw new ArgumentException("User must have a name and email");
             }
